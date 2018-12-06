@@ -1,10 +1,28 @@
 /* Colors */
-$paragraph-color: #000000;
+$paragraph-color: #000;
 $brand-main-color: #ff0000;
+$orange-icon-color: #f58220;
+$section-bg-color: #FFF;
+$text-color: #a6a6a6;
+$number-color: #333;
+$link-user-color: #56819f;                            
+$grey-icon-color: #9c9c9c;
+$hover-link-color: #b1bfbf;
+$sidebar-icon-text-color: #818181;
+$sidebar-bg-color: #191919;
+$bg-color: #f1f1ee;
 
 /* Font sizes */
+$cash-font-size: 20px;
+$button-font-size: 18px;
 $paragraph-font-size: 16px;
+$number-font-size: 14px;
 
 /* Fonts */
-$brand-font: "Open Sans", Helvetica, Arial;
-$paragraph-font: "Open Sans", Helvetica, Arial;
+$brand-font: 'Open Sans', Helvetica, Arial;
+$paragraph-font: 'Open Sans', Helvetica, Arial;
+$page-font: 'Roboto', sans-serif;
+
+/* line-height */
+$line-h-1: 42px;
+$line-h-2: 17px; 

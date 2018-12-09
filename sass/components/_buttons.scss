@@ -1,0 +1,25 @@
+// BUTTON REFRESH
+.btn-refresh {
+    width: 41px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: $orange-button-color;
+}
+
+// ICON FOR BUTTON REFRESH
+.refresh {
+    color: $section-bg-color;
+}
+
+// BASIC BUTTONS
+
+.btn-orange {
+    width: 93px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: $orange-button-color;
+    color: $section-bg-color;
+    &:hover {
+        background-color: $orange-hover-color;
+    }
+}

@@ -409,4 +409,12 @@ template {
 .lsmall:hover {
   color: #ffa200;
 }
+
+.input-date {
+  width: 325px;
+  height: 40px;
+  border-radius: 3px;
+  background-color: #FFF;
+  border: 1px solid #e3e3e3;
+}
 /*# sourceMappingURL=style.css.map */

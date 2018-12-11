@@ -5,6 +5,7 @@
     color: $header-color;
     font-family: $page-font;
     text-transform: uppercase;
+    font-weight: bold;
 }
 .section-header {
     font-size: $header-font-size;
@@ -18,6 +19,8 @@
     font-size: $paragraph-font-size;
     line-height: $line-h-1;
     color: $text-color;
+    font-family: $page-font;
+    font-weight: 300;
 }
 
 // LINKS
@@ -27,6 +30,7 @@
     color: $link-user-color;
     font-family: $page-font;
     font-weight: 300;
+    text-decoration: none;
     &:hover {
         color: $orange-hover-color;
     }
@@ -37,6 +41,7 @@
     color: $link-user-color;
     font-family: $page-font;
     font-weight: 300;
+    text-decoration: none;
     &:hover {
         color: $orange-hover-color;
     }

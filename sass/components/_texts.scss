@@ -24,7 +24,7 @@
 }
 
 // LINKS
-.lbig {
+.link-big {
     font-size: $header-font-size;
     line-height: $line-h-2;
     color: $link-user-color;
@@ -35,15 +35,9 @@
         color: $orange-hover-color;
     }
 }
-.lsmall {
+.link-small {
+    @extend .link-big;
     font-size: $linksm-font-size;
     line-height: $line-h-1;
-    color: $link-user-color;
-    font-family: $page-font;
-    font-weight: 300;
-    text-decoration: none;
-    &:hover {
-        color: $orange-hover-color;
-    }
 }
 

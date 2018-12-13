@@ -618,12 +618,20 @@ template {
   }
 }
 
-.btn-refresh {
-  width: 41px;
-  height: 40px;
+.btn {
   border-radius: 3px;
   background-color: #f58220;
   border: 0;
+}
+
+.btn:hover {
+  background-color: #ffa200;
+  cursor: pointer;
+}
+
+.btn-refresh {
+  width: 41px;
+  height: 40px;
 }
 
 .refresh-icon {
@@ -639,13 +647,7 @@ template {
 .btn-orange {
   width: 93px;
   height: 40px;
-  border-radius: 3px;
-  background-color: #f58220;
   color: #FFF;
-}
-
-.btn-orange:hover {
-  background-color: #ffa200;
 }
 
 .page-header {
@@ -673,7 +675,7 @@ template {
   font-weight: 300;
 }
 
-.lbig {
+.link-big, .link-small {
   font-size: 16px;
   line-height: 17px;
   color: #56819f;
@@ -682,21 +684,13 @@ template {
   text-decoration: none;
 }
 
-.lbig:hover {
+.link-big:hover, .link-small:hover {
   color: #ffa200;
 }
 
-.lsmall {
+.link-small {
   font-size: 13px;
   line-height: 42px;
-  color: #56819f;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  text-decoration: none;
-}
-
-.lsmall:hover {
-  color: #ffa200;
 }
 
 .input-date {
@@ -709,5 +703,34 @@ template {
 
 .input-date:hover {
   border: 1px solid #b1b1b1;
+}
+
+.input-date:after {
+  position: absolute;
+  content: "";
+  height: 28px;
+  background-color: #e3e3e3;
+  width: 1px;
+  margin-left: 150px;
+  top: 56%;
+}
+
+.date {
+  display: inline-block;
+  border: none;
+  height: 35px;
+  font-size: 14px;
+  line-height: 42px;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.date-1 {
+  width: 150px;
+}
+
+.date-2 {
+  width: 100px;
 }
 /*# sourceMappingURL=style.css.map */

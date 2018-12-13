@@ -1,10 +1,18 @@
+// BUTTONS GENERAL
+.btn {
+    border-radius: 3px;
+    background-color: $orange-button-color;
+    border: 0;
+    &:hover {
+        background-color: $orange-hover-color;
+        cursor: pointer;
+    }
+}
+
 // BUTTON REFRESH
 .btn-refresh {
     width: 41px;
     height: 40px;
-    border-radius: 3px;
-    background-color: $orange-button-color;
-    border: 0;
 }
 .refresh-icon {
     fill: white;
@@ -17,15 +25,9 @@
     color: $section-bg-color;
 }
 
-// BASIC BUTTONS
-
+// ADD BUTTONS
 .btn-orange {
     width: 93px;
     height: 40px;
-    border-radius: 3px;
-    background-color: $orange-button-color;
     color: $section-bg-color;
-    &:hover {
-        background-color: $orange-hover-color;
-    }
 }

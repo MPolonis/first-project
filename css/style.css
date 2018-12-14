@@ -618,6 +618,62 @@ template {
   }
 }
 
+.sidebar {
+  font-size: 14px;
+  line-height: 42px;
+  color: #818181;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.sidebar ul {
+  padding-left: 0;
+}
+
+.sidenav {
+  width: 188px;
+  height: 39px;
+  position: relative;
+  background-color: #191919;
+}
+
+.sidenav:hover {
+  background-color: #282828;
+  cursor: pointer;
+  color: #FFF;
+}
+
+.name-position {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 47px;
+  margin: 0;
+  padding: 0;
+}
+
+.icon {
+  fill: #818181;
+  position: absolute;
+  top: 13px;
+  left: 18px;
+}
+
+.icon:hover {
+  fill: #FFF;
+}
+
+.general-icon {
+  height: 15px;
+  width: 16px;
+}
+
+.details-icon {
+  height: 13px;
+  width: 14px;
+}
+
 .btn {
   border-radius: 3px;
   background-color: #f58220;
@@ -635,7 +691,7 @@ template {
 }
 
 .refresh-icon {
-  fill: white;
+  fill: #FFF;
   width: 15px;
   height: 15px;
 }
@@ -694,6 +750,7 @@ template {
 }
 
 .input-date {
+  position: relative;
   width: 325px;
   height: 40px;
   border-radius: 3px;
@@ -711,8 +768,8 @@ template {
   height: 28px;
   background-color: #e3e3e3;
   width: 1px;
-  margin-left: 150px;
-  top: 450px;
+  top: 5px;
+  left: 150px;
 }
 
 .date {
@@ -732,5 +789,18 @@ template {
 
 .date-2 {
   width: 100px;
+}
+
+.calendar-icon {
+  fill: #9c9c9c;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  top: 12px;
+  right: 16px;
+}
+
+.calendar-icon:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

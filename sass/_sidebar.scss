@@ -1,0 +1,52 @@
+// SIDEBAR GENERAL
+.sidebar {
+    font-size: $paragraph-font-size;
+    line-height: $line-h-1;
+    color: $sidebar-icon-text-color;
+    font-family: $page-font;
+    font-weight: 300;
+}
+.sidebar ul {
+    padding-left: 0;
+}
+
+// SIDEBAR LIST
+.sidenav {
+    width: 188px;
+    height: 39px;
+    position: relative;
+    background-color: $sidebar-bg-color;
+    &:hover {
+        background-color: $sidebar-hover-color;
+        cursor: pointer;
+        color: $section-bg-color;
+    }
+}
+
+// SIDEBAR ICONS
+.name-position {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 47px;
+    margin: 0;
+    padding: 0;
+}
+.icon {
+    fill: $sidebar-icon-text-color;
+    position: absolute;
+    top: 13px;
+    left: 18px;
+    &:hover {
+        fill: $section-bg-color;
+    }
+}
+.general-icon {
+    height: 15px;
+    width: 16px;
+}
+.details-icon {
+    height: 13px;
+    width: 14px;
+}

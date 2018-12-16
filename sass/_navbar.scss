@@ -1,0 +1,70 @@
+.navbar {
+    height: 60px;
+    width: 100%;
+    border: 1px solid $border-input-color;
+}
+.nav-top {
+    margin: 0;
+    padding: 0;
+    line-height: 42px;
+    list-style-type: none;
+    float: right;
+    li {
+        display: inline-block;
+        margin: 0 20px;
+    }
+}
+.nav-top-elements {
+    display: inline-block;
+    line-height: $line-h-1;
+    font-family: $page-font;
+    &:hover {
+        cursor: pointer;
+        background: $header-hover-color;
+    }
+}
+.user-profile {
+    font-size: $linksm-font-size;
+    color: $link-user-color;
+    font-family: $page-font;
+    font-weight: 300;
+    text-decoration: none;
+    display: inline-block;
+}
+.user-money {
+    text-decoration: none;
+    font-size: 20px;
+    color: #9c9c9c;
+    font-family: "Roboto";
+    display: inline-block;
+    margin: 0 20px;
+}
+// ICONS
+.quit-icon {
+    height: 15px;
+    width: 19px;
+    fill: $grey-icon-color;
+    //border-left: 1px solid $border-input-color;
+}
+.profile-icon {
+    height: 17px;
+    width: 17px;
+    fill: $grey-icon-color;
+    margin-right: 20px;
+}
+.notification-icon {
+    height: 17px;
+    width: 16px;
+    fill: $grey-icon-color;
+}
+.arrow-icon {
+    height: 7px;
+    width: 11px;
+    fill: $grey-icon-color;
+    margin-right: 0;
+}
+.wallet-icon {
+    height: 18px;
+    width: 17px;
+    fill: $grey-icon-color;
+}

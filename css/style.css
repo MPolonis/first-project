@@ -674,6 +674,31 @@ template {
   width: 14px;
 }
 
+.links-icon {
+  height: 8px;
+  width: 16px;
+}
+
+.banners-icon {
+  height: 13px;
+  width: 14px;
+}
+
+.personal-data-icon {
+  height: 13px;
+  width: 9px;
+}
+
+.payout-icon {
+  height: 13px;
+  width: 13px;
+}
+
+.postback-icon {
+  height: 14px;
+  width: 13px;
+}
+
 .btn {
   border-radius: 3px;
   background-color: #f58220;
@@ -802,5 +827,85 @@ template {
 
 .calendar-icon:hover {
   cursor: pointer;
+}
+
+.navbar {
+  height: 60px;
+  width: 100%;
+  border: 1px solid #e3e3e3;
+}
+
+.nav-top {
+  margin: 0;
+  padding: 0;
+  line-height: 42px;
+  list-style-type: none;
+  float: right;
+}
+
+.nav-top li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.nav-top-elements {
+  display: inline-block;
+  line-height: 42px;
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-top-elements:hover {
+  cursor: pointer;
+  background: #f5f5f2;
+}
+
+.user-profile {
+  font-size: 13px;
+  color: #56819f;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.user-money {
+  text-decoration: none;
+  font-size: 20px;
+  color: #9c9c9c;
+  font-family: "Roboto";
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.quit-icon {
+  height: 15px;
+  width: 19px;
+  fill: #9c9c9c;
+}
+
+.profile-icon {
+  height: 17px;
+  width: 17px;
+  fill: #9c9c9c;
+  margin-right: 20px;
+}
+
+.notification-icon {
+  height: 17px;
+  width: 16px;
+  fill: #9c9c9c;
+}
+
+.arrow-icon {
+  height: 7px;
+  width: 11px;
+  fill: #9c9c9c;
+  margin-right: 0;
+}
+
+.wallet-icon {
+  height: 18px;
+  width: 17px;
+  fill: #9c9c9c;
 }
 /*# sourceMappingURL=style.css.map */

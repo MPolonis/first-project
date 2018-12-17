@@ -838,24 +838,23 @@ template {
 .nav-top {
   margin: 0;
   padding: 0;
-  line-height: 42px;
   list-style-type: none;
   float: right;
 }
 
 .nav-top li {
   display: inline-block;
-  margin: 0 20px;
 }
 
 .nav-top-elements {
-  display: inline-block;
+  display: block;
   line-height: 42px;
   font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  padding: 8px 20px 6px;
 }
 
 .nav-top-elements:hover {
-  cursor: pointer;
   background: #f5f5f2;
 }
 
@@ -866,6 +865,7 @@ template {
   font-weight: 300;
   text-decoration: none;
   display: inline-block;
+  margin: 0;
 }
 
 .user-money {
@@ -874,7 +874,16 @@ template {
   color: #9c9c9c;
   font-family: "Roboto";
   display: inline-block;
-  margin: 0 20px;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.nav-border-right {
+  border-right: 1px solid #e3e3e3;
+}
+
+.nav-border-left {
+  border-left: 1px solid #e3e3e3;
 }
 
 .quit-icon {
@@ -894,13 +903,24 @@ template {
   height: 17px;
   width: 16px;
   fill: #9c9c9c;
+  position: relative;
+}
+
+.notification-icon:after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #f58220;
 }
 
 .arrow-icon {
   height: 7px;
   width: 11px;
   fill: #9c9c9c;
-  margin-right: 0;
 }
 
 .wallet-icon {

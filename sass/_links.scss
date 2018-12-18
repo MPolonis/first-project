@@ -3,32 +3,39 @@
     width: 686px;
     background-color: $section-bg-color;
     border-bottom: 1px solid $border-input-color;
+    padding: 20px 0 0 10px;
+    line-height: 17px;
     .name-links {
         font-size: 16px;
-        line-height: 17px;
         color: #a6a6a6;
         font-family: "Roboto";
         font-weight: bold;
     }
     .link-links {
         font-size: 16px;
-        line-height: 17px;
         color: #56819f;
         font-family: "Roboto";
         font-weight: 300;
         text-decoration: none;
     }
-    .link-icon {
-        height: 8px;
-        width: 16px;
-        fill: $orange-button-color;
-    }
-    .trash-icon {
-        height: 15px;
-        width: 14px;
-        fill: $grey-icon-color
+    .icons {
+        display: none;
+        .link-icon {
+            height: 8px;
+            width: 16px;
+            fill: $orange-button-color;
+        }
+        .trash-icon {
+            height: 15px;
+            width: 14px;
+            fill: $grey-icon-color;
+        }
     }
     &:hover {
         background-color: $hover-link-color;
+    }
+    &:hover .icons {
+        display: inline-block;
+        cursor: pointer;
     }
 }

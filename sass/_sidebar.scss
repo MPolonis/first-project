@@ -18,8 +18,11 @@
     background-color: $sidebar-bg-color;
     &:hover {
         background-color: $sidebar-hover-color;
-        cursor: pointer;
+        //cursor: pointer;
         color: $section-bg-color;
+    }
+    &:hover .icon {
+        fill: $section-bg-color;
     }
 }
 
@@ -35,12 +38,13 @@
 }
 .icon {
     fill: $sidebar-icon-text-color;
-    position: absolute;
-    top: 13px;
-    left: 18px;
-    &:hover {
+    margin-left: 18px;
+    //position: absolute;
+    //top: 13px;
+    //left: 18px;
+    /*&:hover {
         fill: $section-bg-color;
-    }
+    }*/
 }
 .general-icon {
     height: 15px;

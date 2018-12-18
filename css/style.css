@@ -639,8 +639,11 @@ template {
 
 .sidenav:hover {
   background-color: #282828;
-  cursor: pointer;
   color: #FFF;
+}
+
+.sidenav:hover .icon {
+  fill: #FFF;
 }
 
 .name-position {
@@ -655,13 +658,10 @@ template {
 
 .icon {
   fill: #818181;
-  position: absolute;
-  top: 13px;
-  left: 18px;
-}
-
-.icon:hover {
-  fill: #FFF;
+  margin-left: 18px;
+  /*&:hover {
+        fill: $section-bg-color;
+    }*/
 }
 
 .general-icon {
@@ -697,6 +697,155 @@ template {
 .postback-icon {
   height: 14px;
   width: 13px;
+}
+
+.navbar {
+  height: 60px;
+  width: 100%;
+  border: 1px solid #e3e3e3;
+}
+
+.nav-top {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  float: right;
+}
+
+.nav-top li {
+  display: inline-block;
+}
+
+.nav-top-elements {
+  display: block;
+  line-height: 42px;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  padding: 8px 20px 6px;
+}
+
+.nav-top-elements:hover {
+  background: #f5f5f2;
+}
+
+.user-profile {
+  font-size: 13px;
+  color: #56819f;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0;
+}
+
+.user-money {
+  text-decoration: none;
+  font-size: 20px;
+  color: #9c9c9c;
+  font-family: "Roboto";
+  display: inline-block;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.nav-border-right {
+  border-right: 1px solid #e3e3e3;
+}
+
+.nav-border-left {
+  border-left: 1px solid #e3e3e3;
+}
+
+.quit-icon {
+  height: 15px;
+  width: 19px;
+  fill: #9c9c9c;
+}
+
+.profile-icon {
+  height: 17px;
+  width: 17px;
+  fill: #9c9c9c;
+  margin-right: 20px;
+}
+
+.notification-icon {
+  height: 17px;
+  width: 16px;
+  fill: #9c9c9c;
+  position: relative;
+}
+
+.notification-icon:after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #f58220;
+}
+
+.arrow-icon {
+  height: 7px;
+  width: 11px;
+  fill: #9c9c9c;
+}
+
+.wallet-icon {
+  height: 18px;
+  width: 17px;
+  fill: #9c9c9c;
+}
+
+.links {
+  height: 58px;
+  width: 686px;
+  background-color: #FFF;
+  border-bottom: 1px solid #e3e3e3;
+  padding: 20px 0 0 10px;
+  line-height: 17px;
+}
+
+.links .name-links {
+  font-size: 16px;
+  color: #a6a6a6;
+  font-family: "Roboto";
+  font-weight: bold;
+}
+
+.links .link-links {
+  font-size: 16px;
+  color: #56819f;
+  font-family: "Roboto";
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.links .icons {
+  display: none;
+}
+
+.links .icons .link-icon {
+  height: 8px;
+  width: 16px;
+  fill: #f58220;
+}
+
+.links .icons .trash-icon {
+  height: 15px;
+  width: 14px;
+  fill: #9c9c9c;
+}
+
+.links:hover {
+  background-color: #f1f3f3;
+}
+
+.links:hover .icons {
+  display: inline-block;
+  cursor: pointer;
 }
 
 .btn {
@@ -827,105 +976,5 @@ template {
 
 .calendar-icon:hover {
   cursor: pointer;
-}
-
-.navbar {
-  height: 60px;
-  width: 100%;
-  border: 1px solid #e3e3e3;
-}
-
-.nav-top {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  float: right;
-}
-
-.nav-top li {
-  display: inline-block;
-}
-
-.nav-top-elements {
-  display: block;
-  line-height: 42px;
-  font-family: "Roboto", sans-serif;
-  text-decoration: none;
-  padding: 8px 20px 6px;
-}
-
-.nav-top-elements:hover {
-  background: #f5f5f2;
-}
-
-.user-profile {
-  font-size: 13px;
-  color: #56819f;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  text-decoration: none;
-  display: inline-block;
-  margin: 0;
-}
-
-.user-money {
-  text-decoration: none;
-  font-size: 20px;
-  color: #9c9c9c;
-  font-family: "Roboto";
-  display: inline-block;
-  margin: 0;
-  padding: 0 20px;
-}
-
-.nav-border-right {
-  border-right: 1px solid #e3e3e3;
-}
-
-.nav-border-left {
-  border-left: 1px solid #e3e3e3;
-}
-
-.quit-icon {
-  height: 15px;
-  width: 19px;
-  fill: #9c9c9c;
-}
-
-.profile-icon {
-  height: 17px;
-  width: 17px;
-  fill: #9c9c9c;
-  margin-right: 20px;
-}
-
-.notification-icon {
-  height: 17px;
-  width: 16px;
-  fill: #9c9c9c;
-  position: relative;
-}
-
-.notification-icon:after {
-  position: absolute;
-  content: "";
-  top: 10px;
-  left: 5px;
-  width: 8px;
-  height: 8px;
-  border-radius: 4px;
-  background-color: #f58220;
-}
-
-.arrow-icon {
-  height: 7px;
-  width: 11px;
-  fill: #9c9c9c;
-}
-
-.wallet-icon {
-  height: 18px;
-  width: 17px;
-  fill: #9c9c9c;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,28 @@
+
+.statistic-big {
+    height: 64px;
+    width: 309px;
+    border-bottom: 1px solid $border-input-color;
+    padding-top: 20px;
+}
+.statistic-small {
+    height: 41px;
+    width: 309px;
+    border-bottom: 1px solid $border-input-color;
+    padding-top: 10px;
+}
+.statistic-text {
+    font-size: 16px;
+    line-height: 42px;
+    color: #a6a6a6;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+.statistic-number {
+    font-size: 16px;
+    line-height: 42px;
+    color: #333333;
+    font-family: "Roboto";
+    font-weight: 300;
+    text-align: right;
+}

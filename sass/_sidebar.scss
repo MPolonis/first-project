@@ -8,8 +8,10 @@
 }
 .sidebar ul {
     padding-left: 0;
+    a {
+        text-decoration: none;
+    }
 }
-
 // SIDEBAR LIST
 .sidenav {
     width: 188px;

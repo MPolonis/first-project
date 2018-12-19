@@ -76,3 +76,18 @@
     height: 14px;
     width: 13px;
 }
+// LOGO AND HAMBURGER
+.sidenav-logo {
+    @extend .sidenav;
+    height: 60px;
+}
+.logo-size {
+    height: 23px;
+    width: 86px;
+    margin: 18px 0 0 20px;
+}
+.hamburger-icon {
+    height: 16px;
+    width: 18px;
+    margin: 23px 18px 0 0;
+}

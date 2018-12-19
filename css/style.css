@@ -630,19 +630,23 @@ template {
   padding-left: 0;
 }
 
-.sidenav {
+.sidebar ul a {
+  text-decoration: none;
+}
+
+.sidenav, .sidenav-logo {
   width: 188px;
   height: 39px;
   position: relative;
   background-color: #191919;
 }
 
-.sidenav:hover {
+.sidenav:hover, .sidenav-logo:hover {
   background-color: #282828;
   color: #FFF;
 }
 
-.sidenav:hover .icon {
+.sidenav:hover .icon, .sidenav-logo:hover .icon {
   fill: #FFF;
 }
 
@@ -699,6 +703,22 @@ template {
   width: 13px;
 }
 
+.sidenav-logo {
+  height: 60px;
+}
+
+.logo-size {
+  height: 23px;
+  width: 86px;
+  margin: 18px 0 0 20px;
+}
+
+.hamburger-icon {
+  height: 16px;
+  width: 18px;
+  margin: 23px 18px 0 0;
+}
+
 .navbar {
   height: 60px;
   width: 100%;
@@ -742,7 +762,7 @@ template {
   text-decoration: none;
   font-size: 20px;
   color: #9c9c9c;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   display: inline-block;
   margin: 0;
   padding: 0 20px;
@@ -808,37 +828,6 @@ template {
   line-height: 17px;
 }
 
-.links .name-links {
-  font-size: 16px;
-  color: #a6a6a6;
-  font-family: "Roboto";
-  font-weight: bold;
-}
-
-.links .link-links {
-  font-size: 16px;
-  color: #56819f;
-  font-family: "Roboto";
-  font-weight: 300;
-  text-decoration: none;
-}
-
-.links .icons {
-  display: none;
-}
-
-.links .icons .link-icon {
-  height: 8px;
-  width: 16px;
-  fill: #f58220;
-}
-
-.links .icons .trash-icon {
-  height: 15px;
-  width: 14px;
-  fill: #9c9c9c;
-}
-
 .links:hover {
   background-color: #f1f3f3;
 }
@@ -846,6 +835,68 @@ template {
 .links:hover .icons {
   display: inline-block;
   cursor: pointer;
+}
+
+.name-links {
+  font-size: 16px;
+  color: #a6a6a6;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.link-links {
+  font-size: 16px;
+  color: #56819f;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.icons {
+  display: none;
+}
+
+.link-icon {
+  height: 8px;
+  width: 16px;
+  fill: #f58220;
+}
+
+.trash-icon {
+  height: 15px;
+  width: 14px;
+  fill: #9c9c9c;
+}
+
+.statistic-big {
+  height: 64px;
+  width: 309px;
+  border-bottom: 1px solid #e3e3e3;
+  padding-top: 20px;
+}
+
+.statistic-small {
+  height: 41px;
+  width: 309px;
+  border-bottom: 1px solid #e3e3e3;
+  padding-top: 10px;
+}
+
+.statistic-text {
+  font-size: 16px;
+  line-height: 42px;
+  color: #a6a6a6;
+  font-family: "Roboto";
+  font-weight: bold;
+}
+
+.statistic-number {
+  font-size: 16px;
+  line-height: 42px;
+  color: #333333;
+  font-family: "Roboto";
+  font-weight: 300;
+  text-align: right;
 }
 
 .btn {

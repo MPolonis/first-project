@@ -2,14 +2,15 @@
 .sidebar {
     font-size: $paragraph-font-size;
     line-height: $line-h-1;
-    color: $sidebar-icon-text-color;
     font-family: $page-font;
     font-weight: 300;
 }
 .sidebar ul {
     padding-left: 0;
+    margin: 0;
     a {
         text-decoration: none;
+        color: $sidebar-icon-text-color;
     }
 }
 // SIDEBAR LIST
@@ -20,7 +21,6 @@
     background-color: $sidebar-bg-color;
     &:hover {
         background-color: $sidebar-hover-color;
-        //cursor: pointer;
         color: $section-bg-color;
     }
     &:hover .icon {
@@ -41,12 +41,6 @@
 .icon {
     fill: $sidebar-icon-text-color;
     margin-left: 18px;
-    //position: absolute;
-    //top: 13px;
-    //left: 18px;
-    /*&:hover {
-        fill: $section-bg-color;
-    }*/
 }
 .general-icon {
     height: 15px;

@@ -7,13 +7,15 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-    float: right;
+    display: flex;
+    justify-content: flex-end;
     li {
         display: inline-block;
     }
 }
 .nav-top-elements {
     display: block;
+    height: 100%;
     line-height: $line-h-1;
     font-family: $page-font;
     text-decoration: none;
@@ -62,12 +64,14 @@
     height: 17px;
     width: 16px;
     fill: $grey-icon-color;
+}
+.notification-status {
     position: relative;
     &:after {
         position: absolute;
         content: "";
-        top: 10px;
-        left: 5px;
+        top: -4px;
+        left: 8px;
         width: 8px;
         height: 8px;
         border-radius: 4px;

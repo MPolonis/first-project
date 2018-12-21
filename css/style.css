@@ -621,17 +621,18 @@ template {
 .sidebar {
   font-size: 14px;
   line-height: 42px;
-  color: #818181;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
 
 .sidebar ul {
   padding-left: 0;
+  margin: 0;
 }
 
 .sidebar ul a {
   text-decoration: none;
+  color: #818181;
 }
 
 .sidenav, .sidenav-logo {
@@ -663,9 +664,6 @@ template {
 .icon {
   fill: #818181;
   margin-left: 18px;
-  /*&:hover {
-        fill: $section-bg-color;
-    }*/
 }
 
 .general-icon {
@@ -729,7 +727,10 @@ template {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  float: right;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
 }
 
 .nav-top li {
@@ -738,6 +739,7 @@ template {
 
 .nav-top-elements {
   display: block;
+  height: 100%;
   line-height: 42px;
   font-family: "Roboto", sans-serif;
   text-decoration: none;
@@ -793,14 +795,17 @@ template {
   height: 17px;
   width: 16px;
   fill: #9c9c9c;
+}
+
+.notification-status {
   position: relative;
 }
 
-.notification-icon:after {
+.notification-status:after {
   position: absolute;
   content: "";
-  top: 10px;
-  left: 5px;
+  top: -4px;
+  left: 8px;
   width: 8px;
   height: 8px;
   border-radius: 4px;
@@ -1006,6 +1011,8 @@ template {
   color: #333;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+  outline: none;
+  padding-top: 6px;
 }
 
 .date-1 {

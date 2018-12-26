@@ -1,7 +1,10 @@
+
 .navbar {
     height: 60px;
-    width: 100%;
+    //width: 100%;
     border: 1px solid $border-input-color;
+    background-color: $section-bg-color;
+    border-left: none;
 }
 .nav-top {
     margin: 0;

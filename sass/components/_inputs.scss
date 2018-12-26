@@ -1,3 +1,7 @@
+.input-date-position {
+    display: flex;
+    justify-content: flex-end;
+}
 .input-date {
     position: relative;
     width: 325px;
@@ -30,10 +34,10 @@
     outline: none;
     padding-top: 6px;
 }
-.date-1 {
+.date-start {
     width: 150px;
 }
-.date-2 {
+.date-end {
     width: 100px;
 }
 .calendar-icon {

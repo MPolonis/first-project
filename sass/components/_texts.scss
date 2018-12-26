@@ -5,7 +5,7 @@
     color: $header-color;
     font-family: $page-font;
     text-transform: uppercase;
-    font-weight: bold;
+    border-bottom: 1px solid $border-input-color;
 }
 .section-header {
     font-size: $header-font-size;

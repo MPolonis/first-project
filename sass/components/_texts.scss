@@ -6,6 +6,8 @@
     font-family: $page-font;
     text-transform: uppercase;
     border-bottom: 1px solid $border-input-color;
+    margin-bottom: 0;
+    padding-left: 14px;
 }
 .section-header {
     font-size: $header-font-size;

@@ -917,6 +917,17 @@ template {
   background-color: #FFF;
 }
 
+.sth {
+  padding: 32px 0 35px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.graph {
+  display: block;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
 .btn {
   border-radius: 3px;
   background-color: #f58220;
@@ -960,6 +971,8 @@ template {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   border-bottom: 1px solid #e3e3e3;
+  margin-bottom: 0;
+  padding-left: 14px;
 }
 
 .section-header {

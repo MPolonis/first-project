@@ -10,11 +10,12 @@
     width: 309px;
     border-bottom: 1px solid $border-input-color;
     padding-top: 10px;
+    padding-bottom: 40px;
 }
 .statistic-text {
     font-size: 16px;
     line-height: 42px;
-    color: #a6a6a6;
+    color: $header-color;
     font-family: "Roboto";
     font-weight: bold;
 }

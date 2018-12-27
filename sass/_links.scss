@@ -5,6 +5,7 @@
     border-bottom: 1px solid $border-input-color;
     padding: 20px 0 0 10px;
     line-height: $line-h-2;
+    //display: block;
     &:hover {
         background-color: $hover-link-color;
     }
@@ -39,3 +40,5 @@
     width: 14px;
     fill: $grey-icon-color;
 }
+// POSITION
+

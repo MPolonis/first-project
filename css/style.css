@@ -720,6 +720,46 @@ template {
   margin: 23px 18px 0 0;
 }
 
+.sidenav-manager {
+  background-color: #191919;
+  height: 100%;
+}
+
+.sidenav-manager img {
+  margin-left: 18px;
+}
+
+.sidenav-list ul:last-child {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #333;
+  background-color: #191919;
+}
+
+.sidenav-manager-text {
+  font-size: 14px;
+  line-height: 42px;
+  color: #818181;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  margin: 0 0 0 18px;
+  padding: 0;
+}
+
+.manager-status {
+  position: relative;
+}
+
+.manager-status:after {
+  position: absolute;
+  content: "";
+  top: -27px;
+  left: 51px;
+  width: 11px;
+  height: 11px;
+  border-radius: 5px;
+  background-color: #04ae00;
+}
+
 .navbar {
   height: 60px;
   border: 1px solid #e3e3e3;

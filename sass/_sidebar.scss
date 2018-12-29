@@ -89,3 +89,38 @@
     width: 18px;
     margin: 23px 18px 0 0;
 }
+// SIDEBAR MANAGER 
+.sidenav-manager {
+    background-color: $sidebar-bg-color;
+    height: 100%;
+    img {
+        margin-left: 18px;
+    }
+}
+.sidenav-list ul:last-child {
+    padding-bottom: 40px;
+    border-bottom:  1px solid $text-color;
+    background-color: $sidebar-bg-color;
+}
+.sidenav-manager-text {
+    font-size: $paragraph-font-size;
+    line-height: $line-h-1;
+    color: $sidebar-icon-text-color;
+    font-family: $page-font;
+    text-transform: uppercase;
+    margin: 0 0 0 18px;
+    padding: 0;
+}
+.manager-status {
+    position: relative;
+    &:after {
+        position: absolute;
+        content: "";
+        top: -27px;
+        left: 51px;
+        width: 11px;
+        height: 11px;
+        border-radius: 5px;
+        background-color: $manager-status;
+    }
+}

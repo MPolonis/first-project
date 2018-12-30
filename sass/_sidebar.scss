@@ -93,6 +93,7 @@
 .sidenav-manager {
     background-color: $sidebar-bg-color;
     height: 100%;
+    position: relative;
     img {
         margin-left: 18px;
     }
@@ -111,7 +112,18 @@
     margin: 0 0 0 18px;
     padding: 0;
 }
+.sidenav-manager-name {
+    font-size: $paragraph-font-size;
+    line-height: $line-h-1;
+    color: $link-user-color;
+    font-family: $page-font;
+    font-weight: 300;
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+}
 .manager-status {
+    margin-right: 11px;
     position: relative;
     &:after {
         position: absolute;

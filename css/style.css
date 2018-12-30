@@ -723,6 +723,7 @@ template {
 .sidenav-manager {
   background-color: #191919;
   height: 100%;
+  position: relative;
 }
 
 .sidenav-manager img {
@@ -745,7 +746,19 @@ template {
   padding: 0;
 }
 
+.sidenav-manager-name {
+  font-size: 14px;
+  line-height: 42px;
+  color: #56819f;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+}
+
 .manager-status {
+  margin-right: 11px;
   position: relative;
 }
 
@@ -1066,6 +1079,7 @@ template {
 }
 
 .input-date {
+  padding-left: 15px;
   position: relative;
   width: 325px;
   height: 40px;

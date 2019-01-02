@@ -647,11 +647,14 @@ template {
 
 .sidenav:hover, .sidenav-logo:hover {
   background-color: #282828;
-  color: #FFF;
 }
 
 .sidenav:hover .icon, .sidenav-logo:hover .icon {
   fill: #FFF;
+}
+
+.sidenav-name-hover:hover {
+  color: #FFF;
 }
 
 .name-position {
@@ -882,6 +885,7 @@ template {
 }
 
 .links {
+  margin: 0 auto;
   height: 58px;
   width: 686px;
   background-color: #FFF;

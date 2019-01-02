@@ -25,13 +25,18 @@
     background-color: $sidebar-bg-color;
     &:hover {
         background-color: $sidebar-hover-color;
-        color: $section-bg-color;
+        //color: $section-bg-color;
     }
     &:hover .icon {
         fill: $section-bg-color;
     }
 }
+.sidenav-name-hover {
+    &:hover {
+        color: $section-bg-color;
+    }
 
+}
 // SIDEBAR ICONS
 .name-position {
     position: absolute;

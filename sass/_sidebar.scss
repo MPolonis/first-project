@@ -19,37 +19,31 @@
 }
 // SIDEBAR LIST
 .sidenav {
-    //width: 188px;
+    display: flex;
+    justify-content: flex-start;
     height: 39px;
-    position: relative;
     background-color: $sidebar-bg-color;
-    &:hover {
+    &:hover .sidenav-name-hover {
         background-color: $sidebar-hover-color;
-        //color: $section-bg-color;
+        color: $section-bg-color;
+        width: 100%;
     }
     &:hover .icon {
         fill: $section-bg-color;
     }
 }
 .sidenav-name-hover {
-    &:hover {
-        color: $section-bg-color;
-    }
-
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 18px;
 }
 // SIDEBAR ICONS
 .name-position {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 47px;
-    margin: 0;
-    padding: 0;
+    padding-left: 14px;
 }
 .icon {
     fill: $sidebar-icon-text-color;
-    margin-left: 18px;
 }
 .general-icon {
     height: 15px;

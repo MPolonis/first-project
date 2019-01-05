@@ -4,7 +4,7 @@
 
 .container {
   width: 100%;
-  max-width: 1170px;
+  max-width: 1920px;
   margin: 0 auto;
   background-color: $header-hover-color;
 }
@@ -35,4 +35,11 @@
 
 @media(min-width: 1200px) {
   @include grid('xl');
+}
+@for $i from 1 through 12 {
+.col-#{$i} {
+      $width: 100% / 12 * $i;
+      flex: 0 0 $width;
+      max-width: $width;
+  }
 }

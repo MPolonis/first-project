@@ -1,6 +1,11 @@
 // SIDEBAR GENERAL
 .sidebar {
+    width: 210px;
     height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
 }
 .sidenav-list {
     font-size: $paragraph-font-size;
@@ -84,9 +89,10 @@
     margin: 18px 0 0 20px;
 }
 .hamburger-icon {
-    height: 16px;
-    width: 18px;
-    margin: 23px 18px 0 0;
+    height: 20px;
+    width: 23px;
+    margin: 23px 18px 0 31px;
+    cursor: pointer;
 }
 // SIDEBAR MANAGER 
 .sidenav-manager {

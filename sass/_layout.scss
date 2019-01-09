@@ -8,7 +8,10 @@
   margin: 0 auto;
   background-color: $header-hover-color;
 }
-
+.position {
+  display: flex;
+  flex-wrap: wrap;
+}
 .container-fluid {
   width: 100%;
   padding-left: 15px;

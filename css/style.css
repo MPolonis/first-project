@@ -352,6 +352,13 @@ template {
   background-color: #f5f5f2;
 }
 
+.position {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .container-fluid {
   width: 100%;
   padding-left: 15px;
@@ -690,7 +697,7 @@ template {
 }
 
 .sidebar {
-  width: 210px;
+  width: 188px;
   height: 100%;
   position: fixed;
   top: 0;
@@ -801,7 +808,7 @@ template {
 .hamburger-icon {
   height: 20px;
   width: 23px;
-  margin: 23px 18px 0 31px;
+  margin: 23px -14px 0 31px;
   cursor: pointer;
 }
 
@@ -1060,7 +1067,8 @@ template {
 
 .content {
   background-color: #f5f5f2;
-  margin: 0;
+  margin-left: 206px;
+  width: 100%;
 }
 
 .content-general {
@@ -1068,7 +1076,7 @@ template {
   margin-top: 70px;
 }
 
-.sth {
+.general-statistic {
   padding: 32px 0 35px;
   border-bottom: 1px solid #e3e3e3;
 }

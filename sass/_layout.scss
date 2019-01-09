@@ -37,9 +37,9 @@
   @include grid('xl');
 }
 @for $i from 1 through 12 {
-.col-#{$i} {
-      $width: 100% / 12 * $i;
-      flex: 0 0 $width;
-      max-width: $width;
-  }
+  .col-#{$i} {
+    $width: 100% / 12 * $i;
+    flex: 0 0 $width;
+    max-width: $width;
+  };
 }

@@ -37,11 +37,17 @@
     left: 0;
     z-index: 9999;
   }
+  .sidebar-smaller-screens {
+    display: none;
+  }
   .navbar {
     display: none;
   }
-  .content {
+  body .content {
     margin-left: 60px;
+  }
+  body .content-general {
+    margin-top: 0;
   }
 }
 
@@ -63,12 +69,24 @@
     top: 0;
     left: 0;
     z-index: 9999;
-    display: none;
-}
+    display: inline-block;
+  }
+  body .content-general {
+    margin-top: 0;
+  }
 }
 
 @media(min-width: 992px) {
   @include grid('lg');
+  .sidebar {
+    display: inline-block;
+  }
+  .navbar {
+    display: inline-block;
+  }
+  .sidebar-smaller-screens {
+    display: none;
+  }
 }
 
 @media(min-width: 1200px) {

@@ -444,11 +444,17 @@ template {
     left: 0;
     z-index: 9999;
   }
+  .sidebar-smaller-screens {
+    display: none;
+  }
   .navbar {
     display: none;
   }
-  .content {
+  body .content {
     margin-left: 60px;
+  }
+  body .content-general {
+    margin-top: 0;
   }
 }
 
@@ -529,7 +535,10 @@ template {
     top: 0;
     left: 0;
     z-index: 9999;
-    display: none;
+    display: inline-block;
+  }
+  body .content-general {
+    margin-top: 0;
   }
 }
 
@@ -593,6 +602,15 @@ template {
     -ms-flex: 0 0 100%;
         flex: 0 0 100%;
     max-width: 100%;
+  }
+  .sidebar {
+    display: inline-block;
+  }
+  .navbar {
+    display: inline-block;
+  }
+  .sidebar-smaller-screens {
+    display: none;
   }
 }
 

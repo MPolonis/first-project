@@ -26,10 +26,45 @@
 
 @media(max-width: 767px) {
   @include grid('sm');
+  .sidebar {
+    display: none;
+  }
+  .sidebar-mobile {
+    width: 55px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+  .navbar {
+    display: none;
+  }
+  .content {
+    margin-left: 60px;
+  }
 }
 
 @media(min-width: 768px) {
   @include grid('md');
+  .sidebar {
+    display: none;
+  }
+  .sidebar-mobile {
+    display: none;
+  }
+  .navbar {
+    display: none;
+  }
+  .sidebar-smaller-screens {
+    width: 188px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: none;
+}
 }
 
 @media(min-width: 992px) {

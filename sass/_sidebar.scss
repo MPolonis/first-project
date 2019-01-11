@@ -41,7 +41,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 18px;
+    padding-left: 20px;
 }
 // SIDEBAR ICONS
 .name-position {
@@ -94,8 +94,8 @@
     margin: 23px -14px 0 31px;
     cursor: pointer;
 }
-// SIDEBAR MANAGER 
-.sidenav-manager {
+// SIDEBAR MANAGER USER 
+.sidenav-manager-user {
     background-color: $sidebar-bg-color;
     height: 100%;
     position: relative;
@@ -104,11 +104,11 @@
     }
 }
 .sidenav-list ul:last-child {
-    padding-bottom: 40px;
+    padding-bottom: 27px;
     border-bottom:  1px solid $text-color;
     background-color: $sidebar-bg-color;
 }
-.sidenav-manager-text {
+.sidenav-text {
     font-size: $paragraph-font-size;
     line-height: $line-h-1;
     color: $sidebar-icon-text-color;
@@ -117,7 +117,7 @@
     margin: 0 0 0 18px;
     padding: 0;
 }
-.sidenav-manager-name {
+.sidenav-name {
     font-size: $paragraph-font-size;
     line-height: $line-h-1;
     color: $link-user-color;
@@ -135,6 +135,47 @@
         content: "";
         top: -27px;
         left: 51px;
+        width: 11px;
+        height: 11px;
+        border-radius: 5px;
+        background-color: $manager-status;
+    }
+}
+
+// SIDEBAR SMALLER SCREENS
+
+.notification-status-sidebar {
+    position: relative;
+    &:after {
+        position: absolute;
+        content: "";
+        top: 5px;
+        left: 8px;
+        width: 8px;
+        height: 8px;
+        border-radius: 4px;
+        background-color: #f58220;
+    }
+}
+// SIDEBAR MOBILE
+
+.hamburger-icon-mobile {
+    height: 20px;
+    width: 23px;
+    margin: 23px -14px 0 20px;
+    cursor: pointer;
+}
+.img-position {
+    padding-top: 24px;
+}
+.manager-status-mobile {
+    margin-right: 11px;
+    position: relative;
+    &:after {
+        position: absolute;
+        content: "";
+        top: -15px;
+        left: 35px;
         width: 11px;
         height: 11px;
         border-radius: 5px;

@@ -433,6 +433,23 @@ template {
         flex: 0 0 100%;
     max-width: 100%;
   }
+  .sidebar {
+    display: none;
+  }
+  .sidebar-mobile {
+    width: 55px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+  .navbar {
+    display: none;
+  }
+  .content {
+    margin-left: 60px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -495,6 +512,24 @@ template {
     -ms-flex: 0 0 100%;
         flex: 0 0 100%;
     max-width: 100%;
+  }
+  .sidebar {
+    display: none;
+  }
+  .sidebar-mobile {
+    display: none;
+  }
+  .navbar {
+    display: none;
+  }
+  .sidebar-smaller-screens {
+    width: 188px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: none;
   }
 }
 
@@ -749,7 +784,7 @@ template {
       justify-content: flex-start;
   -ms-flex-align: center;
       align-items: center;
-  padding-left: 18px;
+  padding-left: 20px;
 }
 
 .name-position {
@@ -812,23 +847,23 @@ template {
   cursor: pointer;
 }
 
-.sidenav-manager {
+.sidenav-manager-user {
   background-color: #191919;
   height: 100%;
   position: relative;
 }
 
-.sidenav-manager img {
+.sidenav-manager-user img {
   margin-left: 18px;
 }
 
 .sidenav-list ul:last-child {
-  padding-bottom: 40px;
+  padding-bottom: 27px;
   border-bottom: 1px solid #333;
   background-color: #191919;
 }
 
-.sidenav-manager-text {
+.sidenav-text {
   font-size: 14px;
   line-height: 42px;
   color: #818181;
@@ -838,7 +873,7 @@ template {
   padding: 0;
 }
 
-.sidenav-manager-name {
+.sidenav-name {
   font-size: 14px;
   line-height: 42px;
   color: #56819f;
@@ -859,6 +894,48 @@ template {
   content: "";
   top: -27px;
   left: 51px;
+  width: 11px;
+  height: 11px;
+  border-radius: 5px;
+  background-color: #04ae00;
+}
+
+.notification-status-sidebar {
+  position: relative;
+}
+
+.notification-status-sidebar:after {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #f58220;
+}
+
+.hamburger-icon-mobile {
+  height: 20px;
+  width: 23px;
+  margin: 23px -14px 0 20px;
+  cursor: pointer;
+}
+
+.img-position {
+  padding-top: 24px;
+}
+
+.manager-status-mobile {
+  margin-right: 11px;
+  position: relative;
+}
+
+.manager-status-mobile:after {
+  position: absolute;
+  content: "";
+  top: -15px;
+  left: 35px;
   width: 11px;
   height: 11px;
   border-radius: 5px;

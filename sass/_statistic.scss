@@ -1,6 +1,8 @@
 .statistic {
     margin: 0 auto;
     max-width: 700px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .statistic-big {
     height: 64px;
@@ -29,4 +31,8 @@
     font-family: "Roboto";
     font-weight: 300;
     text-align: right;
+}
+.statistic-first-half {
+    padding-right: 66px;
+    display: block;
 }

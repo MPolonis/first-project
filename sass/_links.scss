@@ -1,7 +1,7 @@
 .links {
     margin: 0 auto;
     height: 58px;
-    width: 686px;
+    max-width: 700px;
     background-color: $section-bg-color;
     border-bottom: 1px solid $border-input-color;
     padding: 20px 0 0 10px;
@@ -41,5 +41,48 @@
     width: 14px;
     fill: $grey-icon-color;
 }
-// POSITION
+// SMALLER SCREENS AND MOBILE 
+.content-links-small-screens {
+    display: none;
+}
+.name-links-mobile {
+    font-size: $header-font-size;
+    color: $header-color;
+    font-family: $page-font;
+    font-weight: bold;
+    text-decoration: none;
+    }
+.links-mobile {
+    margin: 0 auto;
+    height: 58px;
+    max-width: 200px;
+    background-color: $section-bg-color;
+    border-bottom: 1px solid $border-input-color;
+    padding: 20px 0 0 10px;
+    line-height: $line-h-2;
+    //text-decoration: none;
+    //display: block;
+    &:hover {
+        background-color: $hover-link-color;
+    }
+    &:hover .icons {
+        display: inline-block;
+        cursor: pointer;
+    }
+}
+.icon-mobile {
+    display: inline-block;
+    cursor: pointer;
+}
+.link-icon-mobile {
+    height: 14px;
+    width:  30px;
+    fill: $orange-button-color;
+    //padding-right: 10px;
+}
+.trash-icon-mobile {
+    height: 17px;
+    width: 22px;
+    fill: $grey-icon-color;
+}
 

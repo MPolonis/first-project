@@ -14,13 +14,13 @@
         border: 1px solid $border-hover-color;
     }
     &:after {
-        position: absolute;
+    	position: absolute;
 		content: "";
 		height: 28px;
 		background-color: $border-input-color;
-        width: 1px;
-        top: 5px;
-        left: 150px;
+      	width: 1px;
+      	top: 5px;
+      	left: 150px;
     }
 }
 .date {

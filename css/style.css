@@ -456,6 +456,20 @@ template {
   body .content-general {
     margin-top: 0;
   }
+  .statistic-first-half,
+  .statistic-second-half {
+    margin: 0 auto;
+    padding-left: 20px;
+  }
+  body .statistic-first-half {
+    padding-right: 0;
+  }
+  .content-links-desktop {
+    display: none;
+  }
+  body .content-links-small-screens {
+    display: block;
+  }
 }
 
 @media (min-width: 768px) {
@@ -540,6 +554,12 @@ template {
   body .content-general {
     margin-top: 0;
   }
+  .content-links-desktop {
+    display: none;
+  }
+  body .content-links-small-screens {
+    display: block;
+  }
 }
 
 @media (min-width: 992px) {
@@ -610,6 +630,15 @@ template {
     display: inline-block;
   }
   .sidebar-smaller-screens {
+    display: none;
+  }
+  body .content-general {
+    margin-top: 70px;
+  }
+  .content-links-desktop {
+    display: block;
+  }
+  body .content-links-small-screens {
     display: none;
   }
 }
@@ -1076,7 +1105,7 @@ template {
 .links {
   margin: 0 auto;
   height: 58px;
-  width: 686px;
+  max-width: 700px;
   background-color: #FFF;
   border-bottom: 1px solid #e3e3e3;
   padding: 20px 0 0 10px;
@@ -1123,9 +1152,61 @@ template {
   fill: #9c9c9c;
 }
 
+.content-links-small-screens {
+  display: none;
+}
+
+.name-links-mobile {
+  font-size: 16px;
+  color: #a6a6a6;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.links-mobile {
+  margin: 0 auto;
+  height: 58px;
+  max-width: 200px;
+  background-color: #FFF;
+  border-bottom: 1px solid #e3e3e3;
+  padding: 20px 0 0 10px;
+  line-height: 17px;
+}
+
+.links-mobile:hover {
+  background-color: #f1f3f3;
+}
+
+.links-mobile:hover .icons {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.icon-mobile {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.link-icon-mobile {
+  height: 14px;
+  width: 30px;
+  fill: #f58220;
+}
+
+.trash-icon-mobile {
+  height: 17px;
+  width: 22px;
+  fill: #9c9c9c;
+}
+
 .statistic {
   margin: 0 auto;
   max-width: 700px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .statistic-big {
@@ -1160,6 +1241,11 @@ template {
   text-align: right;
 }
 
+.statistic-first-half {
+  padding-right: 66px;
+  display: block;
+}
+
 .content {
   background-color: #f5f5f2;
   margin-left: 206px;
@@ -1180,6 +1266,12 @@ template {
   display: block;
   margin: auto;
   padding-bottom: 30px;
+}
+
+.chart-title {
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 76px 0 40px 0;
 }
 
 .btn {

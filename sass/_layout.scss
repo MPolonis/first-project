@@ -24,6 +24,13 @@
 }
 
 
+@for $i from 1 through 12 {
+.col-#{$i} {
+			$width: 100% / 12 * $i;
+			flex: 0 0 $width;
+			max-width: $width;
+	}
+}
 @media(max-width: 767px) {
 	@include grid('sm');
 	.sidebar {
@@ -62,6 +69,25 @@
 	}
 	body .content-links-small-screens {
 		display: block;
+	}
+	body .input-date {
+		padding-left: 5px;
+		height: 73px;
+		margin: 0 auto;
+		width: 117px;
+		&:after {
+			height: 1px;
+			width: 70px;
+			top: 36px;
+			left: 5px;
+		}
+	}
+	body .calendar-icon {
+		top: 28px;
+		right: 12px;
+	}
+	body .date-start {
+		width: 100px;
 	}
 }
 
@@ -120,11 +146,4 @@
 
 @media(min-width: 1200px) {
 	@include grid('xl');
-}
-@for $i from 1 through 12 {
-.col-#{$i} {
-			$width: 100% / 12 * $i;
-			flex: 0 0 $width;
-			max-width: $width;
-	}
 }

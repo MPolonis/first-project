@@ -89,6 +89,16 @@
 	body .date-start {
 		width: 100px;
 	}
+	body .statistic-small,
+	body .statistic-big {
+		width: 200px;
+		margin-right: 0;
+	}
+	body .btn-refresh-position {
+		text-align: center;
+		padding-top: 30px;
+		margin: 0 auto;
+	}
 }
 
 @media(min-width: 768px) {

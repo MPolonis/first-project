@@ -182,3 +182,46 @@
         background-color: $manager-status;
     }
 }
+@media(max-width: 767px) {
+    .sidebar {
+		display: none;
+	}
+	.sidebar-mobile {
+		width: 55px;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 9999;
+	}
+	.sidebar-smaller-screens {
+		display: none;
+    }
+}
+
+@media(min-width: 768px) {
+    .sidebar {
+		display: none;
+	}
+	.sidebar-mobile {
+		display: none;
+    }
+    .sidebar-smaller-screens {
+		width: 188px;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 9999;
+		display: inline-block;
+	}
+}
+
+@media(min-width: 992px) {
+    .sidebar {
+		display: inline-block;
+    }
+    .sidebar-smaller-screens {
+		display: none;
+	}
+}

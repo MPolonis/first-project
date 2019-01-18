@@ -95,3 +95,22 @@
     width: 17px;
     fill: $grey-icon-color;
 }
+
+@media(max-width: 767px) {
+    .navbar {
+		display: none;
+	}
+}
+
+@media(min-width: 768px) {
+    .navbar {
+		display: none;
+	}
+}
+
+@media(min-width: 992px) {
+    .navbar {
+		display: inline-block;
+	}
+}
+

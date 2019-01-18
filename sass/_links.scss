@@ -86,3 +86,29 @@
     fill: $grey-icon-color;
 }
 
+@media(max-width: 767px) {
+    .content-links-desktop {
+		display: none;
+	}
+	.content-links-small-screens {
+		display: block;
+	}
+}
+
+@media(min-width: 768px) {
+    .content-links-desktop {
+		display: none;
+	}
+	.content-links-small-screens {
+		display: block;
+	}
+}
+
+@media(min-width: 992px) {
+    .content-links-desktop {
+		display: block;
+	}
+	body .content-links-small-screens {
+		display: none;
+	}
+}

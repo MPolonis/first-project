@@ -31,17 +31,23 @@
 	}
 	.content-general {
 		margin-top: 0;
-	}
+    }
+    .chart-title {
+        padding-left: 20px;
+    }
 }
 
 @media(min-width: 768px) {
     .content-general {
 		margin-top: 0;
-	}
+    }
+    .chart-title {
+        padding-left: 20px;
+    }
 }
 
 @media(min-width: 992px) {
     .content-general {
 		margin-top: 70px;
-	} 
+    } 
 }

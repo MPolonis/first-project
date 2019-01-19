@@ -917,7 +917,7 @@ template {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 999;
   }
   .sidebar-smaller-screens {
     display: none;
@@ -1187,6 +1187,10 @@ template {
   .content-links-small-screens {
     display: block;
   }
+  .trash-icon-mobile,
+  .link-icon-mobile {
+    cursor: pointer;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1195,6 +1199,10 @@ template {
   }
   .content-links-small-screens {
     display: block;
+  }
+  .trash-icon-mobile,
+  .link-icon-mobile {
+    cursor: pointer;
   }
 }
 
@@ -1321,11 +1329,17 @@ template {
   .content-general {
     margin-top: 0;
   }
+  .chart-title {
+    padding-left: 20px;
+  }
 }
 
 @media (min-width: 768px) {
   .content-general {
     margin-top: 0;
+  }
+  .chart-title {
+    padding-left: 20px;
   }
 }
 

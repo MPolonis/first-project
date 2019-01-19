@@ -92,7 +92,11 @@
 	}
 	.content-links-small-screens {
 		display: block;
-	}
+    }
+    .trash-icon-mobile,
+    .link-icon-mobile {
+        cursor: pointer;
+    }
 }
 
 @media(min-width: 768px) {
@@ -101,7 +105,11 @@
 	}
 	.content-links-small-screens {
 		display: block;
-	}
+    }
+    .trash-icon-mobile,
+    .link-icon-mobile {
+        cursor: pointer;
+    }
 }
 
 @media(min-width: 992px) {

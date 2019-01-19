@@ -1,10 +1,15 @@
 'use strict';
 
-var sidenavHam = function(event){
-    this.classList.toggle('sidebar-smaller-screens');
-    //this.classList.toggle('sidebar-mobile');
+var toggleSidebar = function(){
+   // var sidebarSmallerScreens = document.querySelector('#sidebar-smaller-screens');
+    var sidebarMobile = document.querySelector('#sidebar-mobile')
+
+   // sidebarSmallerScreens.classList.toggle('sidebar-mobile', 'sidebar-smaller-screens');
+    sidebarMobile.classList.toggle('sidebar-smaller-screens');
 };
 
-var hamburger = document.querySelector('#hamburger-menu');
+var hamburgerMobile = document.querySelector('#hamburger-menu-mobile');
+//var hamburgerDesktop = document.querySelector('#hamburger-menu-desktop');
 
-hamburger.addEventListener('click', sidenavHam);
+hamburgerMobile.addEventListener('click', toggleSidebar);
+//hamburgerDesktop.addEventListener('click', toggleSidebar);

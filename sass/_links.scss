@@ -1,0 +1,45 @@
+.links {
+    margin: 0 auto;
+    height: 58px;
+    width: 686px;
+    background-color: $section-bg-color;
+    border-bottom: 1px solid $border-input-color;
+    padding: 20px 0 0 10px;
+    line-height: $line-h-2;
+    //display: block;
+    &:hover {
+        background-color: $hover-link-color;
+    }
+    &:hover .icons {
+        display: inline-block;
+        cursor: pointer;
+    }
+}
+.name-links {
+    font-size: $header-font-size;
+    color: $header-color;
+    font-family: $page-font;
+    font-weight: bold;
+}
+.link-links {
+    font-size: $header-font-size;
+    color: $link-user-color;
+    font-family: $page-font;
+    font-weight: 300;
+    text-decoration: none;
+}
+.icons {
+    display: none;
+}
+.link-icon {
+    height: 8px;
+    width: 16px;
+    fill: $orange-button-color;
+}
+.trash-icon {
+    height: 15px;
+    width: 14px;
+    fill: $grey-icon-color;
+}
+// POSITION
+

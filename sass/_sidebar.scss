@@ -1,0 +1,137 @@
+// SIDEBAR GENERAL
+.sidebar {
+    height: 100%;
+}
+.sidenav-list {
+    font-size: $paragraph-font-size;
+    line-height: $line-h-1;
+    font-family: $page-font;
+    font-weight: 300;
+}
+.sidenav-list ul {
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+    a {
+        text-decoration: none;
+        color: $sidebar-icon-text-color;
+    }
+}
+// SIDEBAR LIST
+.sidenav {
+    display: flex;
+    justify-content: flex-start;
+    height: 39px;
+    background-color: $sidebar-bg-color;
+    &:hover .sidenav-name-hover {
+        background-color: $sidebar-hover-color;
+        color: $section-bg-color;
+        width: 100%;
+    }
+    &:hover .icon {
+        fill: $section-bg-color;
+    }
+}
+.sidenav-name-hover {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 18px;
+}
+// SIDEBAR ICONS
+.name-position {
+    padding-left: 14px;
+}
+.icon {
+    fill: $sidebar-icon-text-color;
+}
+.general-icon {
+    height: 15px;
+    width: 16px;
+}
+.details-icon {
+    height: 13px;
+    width: 14px;
+}
+.links-icon {
+    height: 8px;
+    width: 16px;
+}
+.banners-icon {
+    height: 13px;
+    width: 14px;
+}
+.personal-data-icon {
+    height: 13px;
+    width: 9px;
+}
+.payout-icon {
+    height: 13px;
+    width: 13px;
+}
+.postback-icon {
+    height: 14px;
+    width: 13px;
+}
+// LOGO AND HAMBURGER
+.sidenav-logo {
+    @extend .sidenav;
+    height: 60px;
+}
+.logo-size {
+    height: 23px;
+    width: 86px;
+    margin: 18px 0 0 20px;
+}
+.hamburger-icon {
+    height: 16px;
+    width: 18px;
+    margin: 23px 18px 0 0;
+}
+// SIDEBAR MANAGER 
+.sidenav-manager {
+    background-color: $sidebar-bg-color;
+    height: 100%;
+    position: relative;
+    img {
+        margin-left: 18px;
+    }
+}
+.sidenav-list ul:last-child {
+    padding-bottom: 40px;
+    border-bottom:  1px solid $text-color;
+    background-color: $sidebar-bg-color;
+}
+.sidenav-manager-text {
+    font-size: $paragraph-font-size;
+    line-height: $line-h-1;
+    color: $sidebar-icon-text-color;
+    font-family: $page-font;
+    text-transform: uppercase;
+    margin: 0 0 0 18px;
+    padding: 0;
+}
+.sidenav-manager-name {
+    font-size: $paragraph-font-size;
+    line-height: $line-h-1;
+    color: $link-user-color;
+    font-family: $page-font;
+    font-weight: 300;
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+}
+.manager-status {
+    margin-right: 11px;
+    position: relative;
+    &:after {
+        position: absolute;
+        content: "";
+        top: -27px;
+        left: 51px;
+        width: 11px;
+        height: 11px;
+        border-radius: 5px;
+        background-color: $manager-status;
+    }
+}

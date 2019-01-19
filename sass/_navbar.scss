@@ -1,0 +1,93 @@
+
+.navbar {
+    height: 60px;
+    //width: 100%;
+    border: 1px solid $border-input-color;
+    background-color: $section-bg-color;
+    border-left: none;
+}
+.nav-top {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    li {
+        display: inline-block;
+    }
+}
+.nav-top-elements {
+    display: block;
+    height: 100%;
+    line-height: $line-h-1;
+    font-family: $page-font;
+    text-decoration: none;
+    padding: 8px 20px 6px;
+    &:hover {
+        background: $header-hover-color;
+    }
+}
+.user-profile {
+    font-size: $linksm-font-size;
+    color: $link-user-color;
+    font-family: $page-font;
+    font-weight: 300;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0;
+}
+.user-money {
+    text-decoration: none;
+    font-size: 20px;
+    color: $grey-icon-color;
+    font-family: $page-font;
+    display: inline-block;
+    margin: 0;
+    padding: 0 20px;
+}
+.nav-border-right {
+    border-right: 1px solid $border-input-color;
+}
+.nav-border-left {
+    border-left: 1px solid $border-input-color;
+}
+// ICONS
+.quit-icon {
+    height: 15px;
+    width: 19px;
+    fill: $grey-icon-color;
+}
+.profile-icon {
+    height: 17px;
+    width: 17px;
+    fill: $grey-icon-color;
+    margin-right: 20px;
+}
+.notification-icon {
+    height: 17px;
+    width: 16px;
+    fill: $grey-icon-color;
+}
+.notification-status {
+    position: relative;
+    &:after {
+        position: absolute;
+        content: "";
+        top: -4px;
+        left: 8px;
+        width: 8px;
+        height: 8px;
+        border-radius: 4px;
+        background-color: #f58220;
+    }
+}
+.arrow-icon {
+    height: 7px;
+    width: 11px;
+    fill: $grey-icon-color;
+}
+.wallet-icon {
+    height: 18px;
+    width: 17px;
+    fill: $grey-icon-color;
+}

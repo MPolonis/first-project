@@ -1,0 +1,45 @@
+// TEXT 
+.page-header {
+    font-size: $header-font-size;
+    line-height: $line-h-1;
+    color: $header-color;
+    font-family: $page-font;
+    text-transform: uppercase;
+    border-bottom: 1px solid $border-input-color;
+    margin-bottom: 0;
+    padding-left: 14px;
+}
+.section-header {
+    font-size: $header-font-size;
+    line-height: $line-h-1;
+    color: $header-color;
+    font-family: $page-font;
+    font-weight: bold;
+    
+}
+.p-text {
+    font-size: $paragraph-font-size;
+    line-height: $line-h-1;
+    color: $text-color;
+    font-family: $page-font;
+    font-weight: 300;
+}
+
+// LINKS
+.link-big {
+    font-size: $header-font-size;
+    line-height: $line-h-2;
+    color: $link-user-color;
+    font-family: $page-font;
+    font-weight: 300;
+    text-decoration: none;
+    &:hover {
+        color: $orange-hover-color;
+    }
+}
+.link-small {
+    @extend .link-big;
+    font-size: $linksm-font-size;
+    line-height: $line-h-1;
+}
+

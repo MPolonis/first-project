@@ -1,0 +1,54 @@
+.input-date-position {
+    display: flex;
+    justify-content: flex-end;
+}
+.input-date {
+    padding-left: 15px;
+    position: relative;
+    width: 325px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: $section-bg-color;
+    border: 1px solid $border-input-color;
+    &:hover {
+        border: 1px solid $border-hover-color;
+    }
+    &:after {
+        position: absolute;
+		content: "";
+		height: 28px;
+		background-color: $border-input-color;
+        width: 1px;
+        top: 5px;
+        left: 150px;
+    }
+}
+.date {
+    display: inline-block;
+    border: none; 
+    height: 35px;
+    font-size: $paragraph-font-size;
+    line-height: $line-h-1;
+    color: $text-color;
+    font-family: $page-font;
+    font-weight: 300;
+    outline: none;
+    padding-top: 6px;
+}
+.date-start {
+    width: 150px;
+}
+.date-end {
+    width: 100px;
+}
+.calendar-icon {
+    fill: $grey-icon-color;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    &:hover {
+        cursor: pointer;
+    }
+}

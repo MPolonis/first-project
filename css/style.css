@@ -880,6 +880,42 @@ template {
   background-color: #f58220;
 }
 
+.sidebar-smaller-screens {
+  width: 188px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(0em);
+  transition: all .8s ease-out;
+}
+
+.sidebar-smaller-screens.active {
+  transform: translateX(0em);
+  transition: all .8s ease-out;
+  z-index: 100;
+  display: block;
+}
+
+.toggle-menu {
+  width: 188px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(0em);
+  transition: all .8s ease-out;
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  display: inline-block;
+}
+
 .hamburger-icon-mobile {
   height: 20px;
   width: 23px;
@@ -932,12 +968,6 @@ template {
     display: none;
   }
   .sidebar-smaller-screens {
-    width: 188px;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
     display: inline-block;
   }
 }

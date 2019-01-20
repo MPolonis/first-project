@@ -1,15 +1,17 @@
 'use strict';
 
 var toggleSidebar = function(){
-   // var sidebarSmallerScreens = document.querySelector('#sidebar-smaller-screens');
-    var sidebarMobile = document.querySelector('#sidebar-mobile')
+  
+    var sidebarMobile = document.querySelector('#toggle-menu')
+    var cos = document.querySelector('#sidebar-mobile')
 
-   // sidebarSmallerScreens.classList.toggle('sidebar-mobile', 'sidebar-smaller-screens');
-    sidebarMobile.classList.toggle('sidebar-smaller-screens');
+    sidebarMobile.classList.toggle('active');
+    cos.classList.toggle('hidden');
 };
 
 var hamburgerMobile = document.querySelector('#hamburger-menu-mobile');
-//var hamburgerDesktop = document.querySelector('#hamburger-menu-desktop');
+var hamburgerToggle = document.querySelector('#hamburger-toggle');
 
 hamburgerMobile.addEventListener('click', toggleSidebar);
-//hamburgerDesktop.addEventListener('click', toggleSidebar);
+hamburgerToggle.addEventListener('click', toggleSidebar);
+

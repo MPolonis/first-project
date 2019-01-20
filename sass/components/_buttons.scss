@@ -30,12 +30,15 @@
 
 // ADD BUTTONS
 .btn-orange {
-    width: 93px;
-    height: 40px;
+    width: 127px;
+    height: 42px;
     color: $section-bg-color;
+    font-family: $page-font;
+    line-height: $line-h-1;
+    font-weight: 300;
 }
 .btn-add-position {
     display: flex;
     justify-content: center;
-    padding: 20px 0 20px;
+    padding: 20px 0 26px;
 }

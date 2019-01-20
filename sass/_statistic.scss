@@ -1,4 +1,9 @@
-
+.statistic {
+    margin: 0 auto;
+    max-width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+}
 .statistic-big {
     height: 64px;
     width: 309px;
@@ -26,4 +31,38 @@
     font-family: $page-font;
     font-weight: 300;
     text-align: right;
+}
+.statistic-first-half {
+    padding-right: 66px;
+    display: block;
+}
+
+@media(max-width: 767px) {
+    .statistic-first-half,
+	.statistic-second-half {
+		margin: 0 auto;
+		padding-left: 20px;
+	}
+	.statistic-first-half {
+		padding-right: 0;
+    }
+    .statistic-small,
+	.statistic-big {
+		width: 200px;
+		margin-right: 0;
+	}
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+    .statistic {
+        flex-direction: column;
+        align-items: center;
+    }
+    .statistic-first-half {
+        padding-right: 0;
+    }
+    .statistic-first-half,
+	.statistic-second-half {
+		margin:0 33px;
+	}
 }

@@ -14,13 +14,13 @@
         border: 1px solid $border-hover-color;
     }
     &:after {
-        position: absolute;
+    	position: absolute;
 		content: "";
 		height: 28px;
 		background-color: $border-input-color;
-        width: 1px;
-        top: 5px;
-        left: 150px;
+      	width: 1px;
+      	top: 5px;
+      	left: 150px;
     }
 }
 .date {
@@ -51,4 +51,31 @@
     &:hover {
         cursor: pointer;
     }
+}
+
+@media(max-width: 767px) {
+    .input-date {
+		padding-left: 5px;
+		height: 73px;
+		margin: 0 auto;
+		width: 117px;
+		&:after {
+			height: 1px;
+			width: 70px;
+			top: 36px;
+			left: 5px;
+		}
+    }
+    .calendar-icon {
+		top: 28px;
+		right: 12px;
+	}
+	.date-start {
+		width: 100px;
+	}
+	.btn-refresh-position {
+		text-align: center;
+		padding-top: 10px;
+		margin: 0 auto;
+	}
 }

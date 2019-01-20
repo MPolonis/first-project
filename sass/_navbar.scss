@@ -1,7 +1,11 @@
 
 .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
     height: 60px;
-    //width: 100%;
+    width: 100%;
+    z-index: 1;
     border: 1px solid $border-input-color;
     background-color: $section-bg-color;
     border-left: none;
@@ -51,6 +55,7 @@
 .nav-border-left {
     border-left: 1px solid $border-input-color;
 }
+
 // ICONS
 .quit-icon {
     height: 15px;
@@ -91,3 +96,22 @@
     width: 17px;
     fill: $grey-icon-color;
 }
+
+@media(max-width: 767px) {
+    .navbar {
+		display: none;
+	}
+}
+
+@media(min-width: 768px) {
+    .navbar {
+		display: none;
+	}
+}
+
+@media(min-width: 992px) {
+    .navbar {
+		display: inline-block;
+	}
+}
+

@@ -32,6 +32,7 @@
         background-color: $sidebar-hover-color;
         color: $section-bg-color;
         width: 100%;
+        border-left: 4px solid $orange-button-color;
     }
     &:hover .icon {
         fill: $section-bg-color;
@@ -93,6 +94,10 @@
     width: 23px;
     margin: 23px -14px 0 31px;
     cursor: pointer;
+}
+#hamburger-menu,
+#hamburger-menu-smaller {
+    display: none;
 }
 // SIDEBAR MANAGER USER 
 .sidenav-manager-user {
@@ -163,14 +168,6 @@
 	position: fixed;
 	top: 0;
     left: 0;
-    transform: translateX(0em);
-    transition: all .8s ease-out;
-}
-.sidebar-smaller-screens.active {
-    transform: translateX(0em);
-    transition: all .8s ease-out;
-    z-index: 100;
-    display: block;
 }
 .toggle-menu {
     width: 188px;
@@ -181,7 +178,7 @@
     transform: translateX(0em);
     transition: all .8s ease-out;
     display: none;
-   // margin-left: 55px;
+    z-index: 9999;
 }
 .hidden {
     display: none;

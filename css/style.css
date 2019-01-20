@@ -363,6 +363,7 @@ template {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 21px;
 }
 
 .row {
@@ -736,6 +737,7 @@ template {
   background-color: #282828;
   color: #FFF;
   width: 100%;
+  border-left: 4px solid #f58220;
 }
 
 .sidenav:hover .icon, .sidenav-logo:hover .icon {
@@ -812,6 +814,11 @@ template {
   cursor: pointer;
 }
 
+#hamburger-menu,
+#hamburger-menu-smaller {
+  display: none;
+}
+
 .sidenav-manager-user {
   background-color: #191919;
   height: 100%;
@@ -886,15 +893,6 @@ template {
   position: fixed;
   top: 0;
   left: 0;
-  transform: translateX(0em);
-  transition: all .8s ease-out;
-}
-
-.sidebar-smaller-screens.active {
-  transform: translateX(0em);
-  transition: all .8s ease-out;
-  z-index: 100;
-  display: block;
 }
 
 .toggle-menu {
@@ -906,6 +904,7 @@ template {
   transform: translateX(0em);
   transition: all .8s ease-out;
   display: none;
+  z-index: 9999;
 }
 
 .hidden {
@@ -1410,9 +1409,12 @@ template {
 }
 
 .btn-orange {
-  width: 93px;
-  height: 40px;
+  width: 127px;
+  height: 42px;
   color: #FFF;
+  font-family: "Roboto", sans-serif;
+  line-height: 42px;
+  font-weight: 300;
 }
 
 .btn-add-position {
@@ -1420,7 +1422,7 @@ template {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  padding: 20px 0 20px;
+  padding: 20px 0 26px;
 }
 
 .page-header {

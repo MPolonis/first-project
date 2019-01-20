@@ -21,14 +21,14 @@
     font-size: 16px;
     line-height: 42px;
     color: $header-color;
-    font-family: "Roboto";
+    font-family: $page-font;
     font-weight: bold;
 }
 .statistic-number {
     font-size: 16px;
     line-height: 42px;
     color: #333333;
-    font-family: "Roboto";
+    font-family: $page-font;
     font-weight: 300;
     text-align: right;
 }

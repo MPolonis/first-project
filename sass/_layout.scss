@@ -47,13 +47,3 @@
 @media(min-width: 1200px) {
 	@include grid('xl');
 }
-<<<<<<< HEAD
-=======
-@for $i from 1 through 12 {
-  .col-#{$i} {
-    $width: 100% / 12 * $i;
-    flex: 0 0 $width;
-    max-width: $width;
-  }
-}
->>>>>>> 37b1a36cd1a8f22fc7006dac334a761b404e2c51
